@@ -2,8 +2,8 @@ function movies(data, index) {
     return `
         
         <main data-index="${index+1}" class="data-card">
-            <h4>${data.title}</h4>
-            <h2>${data.sub}</h2>
+            <h2>${data.title}</h2>
+            <h4>${data.sub}</h4>
             <h5>${data.text}</h5>
             <button>Watch</button>
         </main>`

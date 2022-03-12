@@ -98,17 +98,19 @@ h1 {
     gap: 90px 20px;
     margin: auto;
     margin-top: 100px;
-    padding: 40px
-
-    
 }
 
 .data-card {
     position: relative;
 
+    width: 460px;
+    max-height: 460px;
+
+    padding: 40px;
+
     background-color: var(--secondary);
     color: var(--primary);
-
+    font-weight: 400;
 }
 
 .data-card::before {
@@ -128,6 +130,23 @@ h1 {
     color: var(--secondary);
     font-size: 24px;
 }
+
+.data-card h2 {
+    font-size: 36px;
+    padding: 5px 0;
+}
+
+.data-card h4 {
+    font-size: 18px;
+    border-bottom: var(--primary) 1px solid;
+    padding: 5px 0;
+}
+
+.data-card h5 {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
 
 
 
