@@ -107,6 +107,7 @@ h1 {
     min-height: 410px;
 
     padding: 40px;
+    margin: auto;
 
     background-color: var(--secondary);
     color: var(--primary);
@@ -167,10 +168,15 @@ button:hover {
 }
 
 
+@media screen and (max-width:900px) {
+    #root {
+        grid-template-columns: auto;
+    }
+}
 
 @media screen and (max-width:420px) {
     h1 {
         font-size: 16px;
     }
-    
+        
 }
