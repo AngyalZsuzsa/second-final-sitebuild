@@ -42,6 +42,7 @@ button input textarea select {
 
 * {
     font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 body {
@@ -87,6 +88,45 @@ h1 {
     top: 50%;
     right: 1%;
     transform: translateY(-50%);
+}
+
+#root {
+    max-width: 1000px;
+    
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 90px 20px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 40px
+
+    
+}
+
+.data-card {
+    position: relative;
+
+    background-color: var(--secondary);
+    color: var(--primary);
+
+}
+
+.data-card::before {
+    position: absolute;
+    top: -20px; 
+    left: 50%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    content: attr(data-index);
+    
+    width: 40px; 
+    height: 40px;
+    
+    border: var(--secondary) 1px solid;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 24px;
 }
 
 
