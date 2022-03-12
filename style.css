@@ -35,3 +35,7 @@ button input textarea select {
 
 /* ======= CSS RESET ======================*/
 
+:root {
+    --primary: #242d38;
+    --secondary: #efd592;
+}
